@@ -1,2 +1,4 @@
 ---
-# tasks file for ansible-php7.1
+#- import_tasks: 00-remove-php-component.yml
+- import_tasks: 01-install-php-component.yml
+- import_tasks: 02-restart-php-fpm.yml
